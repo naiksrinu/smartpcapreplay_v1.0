@@ -1,4 +1,19 @@
 Help:
 
-1. Run the file using sudo permissions 
-2. Ensure your Host has atlease two interfaces (Ex: eth0 and eth1)
+1. Preferable Platform: Ubuntu 12.04 + 
+2. Perform Update
+   $ sudo apt-get update
+3. Install Python Setup Tools
+   $ sudo apt-get install --force-yes --yes python-setuptools 
+4. Install Scapy and DPKG
+    $ sudo apt-get install python-scapy
+                or
+    $ sudo pip install scapy
+
+    $ sudo apt-get install python-dpkt
+                or
+    $ pip install http://dpkt.googlecode.com/files/dpkt-1.8.tar.gz
+5. Ensure your Host has atlease two interfaces (Ex: eth0 and eth1)
+6. Run the file smartpcapreplay.py using sudo permissions 
+    $ sudo python smartpcapreplay.py
+
