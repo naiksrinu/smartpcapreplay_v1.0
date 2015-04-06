@@ -1,6 +1,7 @@
 #!/usr/bin/python
-__Author__ = "Srinivas Naik"
-
+__author__ = "Srinivas Naik (0xN41K)"
+__license__ = "GPL"
+__version__ = "1.0.1"
 '''
 Smart PCAP Replay is extension to TCPReplay tool which can smartly simulate Client and Server communications from 
 given .pcap using single Host
