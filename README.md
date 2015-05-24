@@ -14,14 +14,14 @@ help                --- This document gives the glance to prepare your setup
 
 Detail Test Bed:
 
-  	        |----------|		     
+  			|----------|		     
 		--------|  Target  |-------|       
 		|     E0|----------|E1	   |        
-	  |                 			   |        
-		|			                     |         
-	  |	      |----------|	     |         
-	  |-------|  Linux   |-------|         
-	        E0|----------|E1		     
+	  	|       		   |        
+		|	                   |         
+	  	|       |----------|	   |         
+	  	|-------|  Linux   |-------|         
+	              E0|----------|E1		     
 
 
 Target IP's: 
@@ -32,8 +32,13 @@ Linux IP's:
           Eth0: 10.10.10.2/24
           Eth1: 20.20.20.2/24
 
-naik@sec$ sudo python smartpcapreplay.py tcppacket_2gb.pcap -i 00:22:xx:xx:xx:xx \
+
+How to Run:
+naik@sec$ sudo python ip2f.py tcppacket_2gb.pcap
+# Will identify all sessions and filter IP lists 
+
+naik@sec$ sudo python smartpcapreplay.py -p tcppacket_2gb.pcap -i 00:22:xx:xx:xx:xx \
           -o 01:12:yy:yy:yy:yy -c 10.10.10.2 -s 20.20.20.2
-         
+#Will replay the packets by modifying SRC IP and DST IP as per the current setup.
 
 
